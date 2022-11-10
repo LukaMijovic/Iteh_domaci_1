@@ -13,17 +13,21 @@ html {
 
 body {
     padding: 2rem;
-    font-family: "Monteserrat", sans-serif;
     text-align: center;
     background: linear-gradient(-45deg, var(--var-primary-color), var(--var-seconday-color), var(--var-thrid-color), var(--var-fourth-color));
     background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
+    animation: gradient 10s ease infinite;
+}
+
+body a {
+    text-decoration: none;
 }
 
 header div {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Montserrat", sans-serif;
 }
 
 #sec-1 {
@@ -31,21 +35,24 @@ header div {
     padding: 2rem;
     border-radius: 2rem;
     background-color: var(--var-primary-color);
+    font-family: "Montserrat", sans-serif;
 }
 
-#sec-1 button {
-    background-color: var(--var-seconday-color);
+#sec-1 a {
+    background-color: var(--var-black-color);
+    color: white;
     border-radius: 1rem;
-    padding: 0.3rem;
+    padding: 0.6rem;
     transition: 0.3s;
     border: none;
 }
 
-#sec-1 button:hover {
-    background-color: var(--var-thrid-color);
+#sec-1 a:hover {
+    background-color: var(--var-seconday-color);
+    color: var(--var-black-color);
 }
 
-#sec-1 button:active {
+#sec-1 a:active {
     background-color: var(--var-fourth-color);
     transform: scale(1.05);
 }

@@ -1,0 +1,44 @@
+body {
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+#sec-1 {
+    font-family: "Montserrat", sans-serif;
+}
+
+#sec-1 {
+    margin-top: 2rem;
+    padding: 2rem 10rem 2rem 10rem;
+    border-radius: 2rem;
+    background-color: var(--var-primary-color);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+#sec-1 div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+#sec-1 button {
+    background-color: var(--var-black-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    transition: 0.3s;
+    border: none;
+    text-align: left;
+}
+
+#sec-1 button:hover {
+    background-color: var(--var-seconday-color);
+    color: var(--var-black-color);
+}
+
+#sec-1 button:active {
+    background-color: var(--var-fourth-color);
+    transform: scale(1.05);
+}
+
