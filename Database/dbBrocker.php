@@ -1,26 +1,19 @@
 <?php
 
-class DBBrocker {
+//require '../model/player.php';
 
-    private static $dbBrocker = new DBBrocker();
+class DBBrocker {
     public $conn;
-    public static $status = false;
     public $dataBaseName;
     public $url;
     public $user;
     public $pass;
-    private function __construct() {
+    public function __construct() {
         $this->dataBaseName = "iteh_domaci_1";
         $this->url = "localhost";
         $this->user = "root";
         $this->pass = "";
         $this->conn = new mysqli($this->url, $this->user, $this->pass, $this->dataBaseName);   
-    }
-
-    public static function getDBBrocker() {
-        if (DBBrocker::$status) {
-            return DBBrocker::$dbBrocker;
-        }
     }
 
     public function addPlayer($newPlayer) {

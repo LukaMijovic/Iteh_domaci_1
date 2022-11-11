@@ -1,13 +1,20 @@
 <?php
 
-    session_start();
+    require '../../database/dbBrocker.php';
 
-    $db = DBBrocker::getDBBrocker();
+    //session_start();
 
+    $db = new DBBrocker();
     $players = $db->getAllPlayers();
 
-    //$shirtNumber = $_POST["broj-dres"];
-
+    if (!$players) {
+        die();
+    }
+    else if ($players->num_rows == 0) {
+        echo "Nema dostupnih igraca";
+        die();
+    }
+    else {
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -48,24 +55,23 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
-                        <td>Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
-                        <td>the Bird</td>
-                        <td>@twitter</td>
-                    </tr>
+                    <?php
+                        while ($res = $players->fetch_array()) {
+                    ?>
+                        <tr>
+                            <td><?php echo $res["shirt_number"] ?></td>
+                            <td><?php echo $res["name"] ?></td>
+                            <td><?php echo $res["surname"] ?></td>
+                            <td><?php echo $res["position"] ?></td>
+                            <td><?php echo $res["number_appearance"] ?></td>
+                            <td><?php echo $res["number_of_goals"] ?></td>
+                            <td><?php echo $res["number_of_assists"] ?></td>
+                            <td><?php echo $res["number_of_saves"] ?></td>
+                        </tr>
+                    <?php
+                        }
+                    }
+                    ?>
                     </tbody>
                 </table>
             </div>
