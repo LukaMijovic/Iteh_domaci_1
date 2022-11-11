@@ -28,9 +28,5 @@ $("#addPlayerForm").submit(function () {
             alert("Zahtev nije ni poslat");
         }
     });
-
-    request.fail(function (jqXHR, status, error) {
-        
-    });
 });
 

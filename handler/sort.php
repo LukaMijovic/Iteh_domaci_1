@@ -24,7 +24,7 @@
                         <th scope="col"><a id="firstname" class="col-sort" href="#" data-order="'.$order.'">Ime</a></th>
                         <th scope="col"><a id="surname" class="col-sort" href="#" data-order="'.$order.'">Prezime</a></th>
                         <th scope="col"><a id="position" class="col-sort" href="#" data-order="'.$order.'">Pozicija</a></th>
-                        <th scopre="col"><a id="number_appearance" class="col-sort" href="#" data-order="'.$order.'">Broj nastupa</a></th>
+                        <th scope="col"><a id="number_appearance" class="col-sort" href="#" data-order="'.$order.'">Broj nastupa</a></th>
                         <th scope="col"><a id="number_of_goals" class="col-sort" href="#" data-order="'.$order.'">Golovi</a></th>
                         <th scope="col"><a id="number_of_assists" class="col-sort" href="#" data-order="'.$order.'">Asistencije</a></th>
                         <th scope="col"><a id="number_of_saves" class="col-sort" href="#" data-order="'.$order.'">Odbrane</a></th>
@@ -49,6 +49,7 @@
 
     if ($result) {
         echo $output;
+        //$db->conn->close();
     }
     else {
         echo "Fail";

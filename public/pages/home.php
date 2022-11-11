@@ -36,7 +36,7 @@
     <header>
         <div>
             <a href="/public/pages/home.php"><img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo"></a>
-            <h1>Zvanučna stranica fudbalskog kluba Flamingo</h1>
+            <h1 id="test_naslov">Zvanučna stranica fudbalskog kluba Flamingo</h1>
         </div>
     </header>
     <main>
@@ -50,7 +50,7 @@
                         <th scope="col"><a id="firstname" class="col-sort" href="#" data-order="desc">Ime</a></th>
                         <th scope="col"><a id="surname" class="col-sort" href="#" data-order="desc">Prezime</a></th>
                         <th scope="col"><a id="position" class="col-sort" href="#" data-order="desc">Pozicija</a></th>
-                        <th scopre="col"><a id="number_appearance" class="col-sort" href="#" data-order="asc">Broj nastupa</a></th>
+                        <th scope="col"><a id="number_appearance" class="col-sort" href="#" data-order="asc">Broj nastupa</a></th>
                         <th scope="col"><a id="number_of_goals" class="col-sort" href="#" data-order="asc">Golovi</a></th>
                         <th scope="col"><a id="number_of_assists" class="col-sort" href="#" data-order="asc">Asistencije</a></th>
                         <th scope="col"><a id="number_of_saves" class="col-sort" href="#" data-order="asc">Odbrane</a></th>
