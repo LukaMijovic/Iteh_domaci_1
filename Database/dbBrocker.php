@@ -30,6 +30,28 @@ class DBBrocker {
         $query = "DELETE FROM player WHERE shirt_number = $shirtNumber";
         return $this->conn->query($query);
     }
+
+    public function logInUser($user) {
+        $query = "SELECT * FROM user WHERE id=$user->email";
+        $result = $this->conn->query($query);
+
+        if ($result->num_rows == 0) {
+            $_SESSION["message"] = "Ne postoji korisnik";
+        }
+        else {
+            $userFromDb = $result->fetch_assoc();
+            if ($user->pass == $userFromDb["pass"]) {
+                $_SESSION["email"] = $user->email;
+                $_SESSION["pass"] = $user->pass;
+                $_SESSION["isLogged"] = true;
+
+                header("location: /public/pages/home.php");
+            }
+        }
+
+        return $result;
+
+    }
 }
 
 ?>

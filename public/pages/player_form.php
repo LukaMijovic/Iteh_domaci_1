@@ -17,13 +17,13 @@
 <body>
     <header>
         <div>
-            <a href="index.php"><img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo"></a>
+            <a href="home.php"><img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo"></a>
             <h1>Zvanučna stranica fudbalskog kluba Flamingo</h1>
         </div>
     </header>
     <main>
         <section id="sec-1">
-        <form id="addPlayerForm" action="#" method="POST">
+        <form id="addPlayerForm" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="ime">Ime</label>

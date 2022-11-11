@@ -1,0 +1,30 @@
+main {
+    padding-left: 30%;
+    padding-right: 30%;
+    text-align: center;
+}
+
+#sec-1 form {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#sec-1 button {
+    background-color: var(--var-black-color);
+    color: white;
+    border-radius: 1rem;
+    padding: 0.6rem;
+    transition: 0.3s;
+    border: none;
+    margin: 2rem;
+}
+
+#sec-1 button:hover {
+    background-color: var(--var-seconday-color);
+    color: var(--var-black-color);
+}
+
+#sec-1 button:active {
+    background-color: var(--var-fourth-color);
+    transform: scale(1.05);
+}

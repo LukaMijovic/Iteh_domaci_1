@@ -18,7 +18,7 @@ $("#addPlayerForm").submit(function () {
         console.log(res);
         if (res === "Success") {
             alert("Igrace je dodat!");
-            $(location).attr('href','index.php');
+            $(location).attr('href','home.php');
         }
         else if(res === "Fail"){
             alert("Igrac nije dodat!");
@@ -33,3 +33,4 @@ $("#addPlayerForm").submit(function () {
         
     });
 });
+
