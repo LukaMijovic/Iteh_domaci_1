@@ -39,6 +39,23 @@ header div {
     background-color: var(--var-primarytrans-color);
 }
 
+#sec-1 .col-sort {
+    border: none;
+    background-color: transparent;
+}
+
+#sec-1 .col-sort:hover {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+#sec-1 .col-sort:active {
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
 #sec-1 a {
     background-color: var(--var-black-color);
     color: white;
@@ -60,6 +77,13 @@ header div {
 
 #flamingo-logo {
     width: 7rem;
+}
+
+#sec-1 button {
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--var-thrid-color);
+    color: var(--var-black-color);
 }
 
 #player-table {

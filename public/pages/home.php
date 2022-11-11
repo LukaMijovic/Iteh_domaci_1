@@ -29,8 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="../scripts/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="../scripts/sort.js" defer></script>
 </head>
 <body>
     <header>
@@ -46,14 +46,14 @@
                 <table id="player-table" class="table table-striped table-dark">
                     <thead>
                     <tr>
-                        <th scope="col">#Broj</th>
-                        <th scope="col">Ime</th>
-                        <th scope="col">Prezime</th>
-                        <th scope="col">Pozicija</th>
-                        <th scopre="col">Broj nastupa</th>
-                        <th scope="col">Golovi</th>
-                        <th scope="col">Asistencije</th>
-                        <th scope="col">Odbrane</th>
+                        <th scope="col"><a id="shirt_number" class="col-sort" href="#" data-order="desc">#Broj</a></th>
+                        <th scope="col"><a id="firstname" class="col-sort" href="#" data-order="desc">Ime</a></th>
+                        <th scope="col"><a id="surname" class="col-sort" href="#" data-order="desc">Prezime</a></th>
+                        <th scope="col"><a id="position" class="col-sort" href="#" data-order="desc">Pozicija</a></th>
+                        <th scopre="col"><a id="number_appearance" class="col-sort" href="#" data-order="asc">Broj nastupa</a></th>
+                        <th scope="col"><a id="number_of_goals" class="col-sort" href="#" data-order="asc">Golovi</a></th>
+                        <th scope="col"><a id="number_of_assists" class="col-sort" href="#" data-order="asc">Asistencije</a></th>
+                        <th scope="col"><a id="number_of_saves" class="col-sort" href="#" data-order="asc">Odbrane</a></th>
                     </tr>
                     </thead>
                     <tbody>

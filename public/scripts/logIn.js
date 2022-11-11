@@ -7,7 +7,7 @@ $("#log-in").submit(function () {
 
     request = $.ajax({
         url: "./handler/logIn.php",
-        type: "post",
+        method: "post",
         data: $serz
     });
 

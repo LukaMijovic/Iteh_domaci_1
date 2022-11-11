@@ -10,7 +10,7 @@ $("#addPlayerForm").submit(function () {
 
     request = $.ajax({
         url: "../../handler/add.php",
-        type: "post",
+        method: "post",
         data: $serz
     });
 

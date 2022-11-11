@@ -56,6 +56,12 @@ class DBBrocker {
         return $result;
 
     }
+
+    public function sortPlayers($colName, $order) {
+        $query = "SELECT * FROM player ORDER BY $colName $order";
+        //echo $query;
+        return $this->conn->query($query);
+    }
 }
 
 ?>
