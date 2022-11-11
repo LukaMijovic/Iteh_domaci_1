@@ -15,7 +15,7 @@
 <body>
     <header>
         <div>
-            <img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo">
+            <a href="index.php"><img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo"></a>
             <h1>Zvanučna stranica fudbalskog kluba Flamingo</h1>
         </div>
     </header>

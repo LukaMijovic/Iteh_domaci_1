@@ -11,7 +11,7 @@ body {
     margin-top: 2rem;
     padding: 2rem 10rem 2rem 10rem;
     border-radius: 2rem;
-    background-color: var(--var-primary-color);
+    background-color: var(--var-primarytrans-color);
     font-family: "Montserrat", sans-serif;
     text-align: center;
 }

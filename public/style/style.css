@@ -1,5 +1,6 @@
 :root {
     --var-primary-color: #fe9bf8;
+    --var-primarytrans-color: rgba(255, 154, 243, 0.536);
     --var-seconday-color: #9bc6fe;
     --var-thrid-color: #fed29b;
     --var-fourth-color: #9bfea0;
@@ -34,8 +35,8 @@ header div {
     margin-top: 2rem;
     padding: 2rem;
     border-radius: 2rem;
-    background-color: var(--var-primary-color);
     font-family: "Montserrat", sans-serif;
+    background-color: var(--var-primarytrans-color);
 }
 
 #sec-1 a {
@@ -66,7 +67,7 @@ header div {
     margin-bottom: 5rem;
     border: 2rem;
     border-radius: 10px;
-    border-color: var(--var-primary-color);
+    border-color: var(--var-primarytrans-color);
 }
 
 @keyframes gradient {
