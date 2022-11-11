@@ -1,3 +1,14 @@
+<?php
+
+    session_start();
+
+    $db = DBBrocker::getDBBrocker();
+
+    $players = $db->getAllPlayers();
+
+    //$shirtNumber = $_POST["broj-dres"];
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +41,7 @@
                         <th scope="col">Ime</th>
                         <th scope="col">Prezime</th>
                         <th scope="col">Pozicija</th>
+                        <th scopre="col">Broj nastupa</th>
                         <th scope="col">Golovi</th>
                         <th scope="col">Asistencije</th>
                         <th scope="col">Odbrane</th>

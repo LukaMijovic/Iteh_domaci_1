@@ -39,6 +39,10 @@
                 <label for="broj-dres">Broj na dresu</label>
                 <input type="number" class="form-control" id="broj-dres" placeholder="#Broj">
                 <div class="form-group col-md-6">
+                <div class="form-group col-md-6">
+                <label for="broj-nastup">Broj nastupa</label>
+                <input type="number" class="form-control" id="broj-nastup" placeholder="Broj nastupa">
+                <div class="form-group col-md-6">
                 <label for="broj-golova">Broj golova</label>
                 <input type="number" class="form-control" id="broj-golova" placeholder="Broj golova">
                 <div class="form-group col-md-6">
