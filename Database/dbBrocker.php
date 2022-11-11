@@ -32,11 +32,15 @@ class DBBrocker {
     }
 
     public function logInUser($user) {
-        $query = "SELECT * FROM user WHERE id=$user->email";
+        $email = $user->email;
+        $query = "SELECT * FROM user WHERE email = '$email'";
         $result = $this->conn->query($query);
+
+        //echo $result->num_rows;
 
         if ($result->num_rows == 0) {
             $_SESSION["message"] = "Ne postoji korisnik";
+            //echo $_SESSION["message"];
         }
         else {
             $userFromDb = $result->fetch_assoc();
@@ -45,7 +49,7 @@ class DBBrocker {
                 $_SESSION["pass"] = $user->pass;
                 $_SESSION["isLogged"] = true;
 
-                header("location: /public/pages/home.php");
+                //header("location: ../public/pages/home.php");
             }
         }
 
