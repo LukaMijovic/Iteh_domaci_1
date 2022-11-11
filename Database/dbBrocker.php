@@ -17,12 +17,17 @@ class DBBrocker {
     }
 
     public function addPlayer($newPlayer) {
-        $query = "INSERT INTO player VALUES($newPlayer->shirtNumber, $newPlayer->name, $newPlayer->surname, $newPlayer->position, $newPlayer->numberOfApperances, $newPlayer->numberOfGoals, $newPlayer->numberOfAssists, $newPlayer->numberOfSaves)";
-        $this->conn->query($query);
+        $query = "INSERT INTO player(shirt_number, firstname, surname, position, number_appearance, number_of_goals, number_of_assists, number_of_saves) VALUES($newPlayer->shirtNumber, '$newPlayer->name', '$newPlayer->surname', '$newPlayer->position', $newPlayer->numberOfAppearances, $newPlayer->numberOfGoals, $newPlayer->numberOfAssists, $newPlayer->numberOfSaves)";
+        return $this->conn->query($query);
     }
 
     public function getAllPlayers() {
         $query = "SELECT * FROM player";
+        return $this->conn->query($query);
+    }
+
+    public function deleteOnePlayer($shirtNumber) {
+        $query = "DELETE FROM player WHERE shirt_number = $shirtNumber";
         return $this->conn->query($query);
     }
 }

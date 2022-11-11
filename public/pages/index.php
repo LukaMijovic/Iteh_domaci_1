@@ -29,6 +29,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="../scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -60,7 +62,7 @@
                     ?>
                         <tr>
                             <td><?php echo $res["shirt_number"] ?></td>
-                            <td><?php echo $res["name"] ?></td>
+                            <td><?php echo $res["firstname"] ?></td>
                             <td><?php echo $res["surname"] ?></td>
                             <td><?php echo $res["position"] ?></td>
                             <td><?php echo $res["number_appearance"] ?></td>

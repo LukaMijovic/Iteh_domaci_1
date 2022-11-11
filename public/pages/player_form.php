@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style/style.css">    
     <link rel="stylesheet" href="../style/player_form.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
     <title>Dodaj igraca</title>
 </head>
 <body>
@@ -21,39 +23,42 @@
     </header>
     <main>
         <section id="sec-1">
-        <form>
+        <form id="addPlayerForm" action="#" method="POST">
             <div class="form-row">
                 <div class="form-group col-md-6">
                 <label for="ime">Ime</label>
-                <input type="text" class="form-control" id="ime" placeholder="Ime">
+                <input type="text" class="form-control" id="ime" name="ime" placeholder="Ime" required>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="prezime">Prezime</label>
-                <input type="text" class="form-control" id="prezime" placeholder="Prezime">
+                <input type="text" class="form-control" id="prezime" name="prezime" placeholder="Prezime" required>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="pozicija">Pozicija</label>
-                <input type="text" class="form-control" id="pozicija" placeholder="Pozicija">
+                <input type="text" class="form-control" id="pozicija" name="pozicija" placeholder="Pozicija" required>
                 </div>
                 <div class="form-group col-md-6">
                 <label for="broj-dres">Broj na dresu</label>
-                <input type="number" class="form-control" id="broj-dres" placeholder="#Broj">
-                <div class="form-group col-md-6">
+                <input type="number" class="form-control" id="broj-dres" name="broj-dres" placeholder="#Broj" required>
+                </div>
                 <div class="form-group col-md-6">
                 <label for="broj-nastup">Broj nastupa</label>
-                <input type="number" class="form-control" id="broj-nastup" placeholder="Broj nastupa">
+                <input type="number" class="form-control" id="broj-nastup" name="broj-nastup" placeholder="Broj nastupa" required>
+                </div>
                 <div class="form-group col-md-6">
                 <label for="broj-golova">Broj golova</label>
-                <input type="number" class="form-control" id="broj-golova" placeholder="Broj golova">
+                <input type="number" class="form-control" id="broj-golova" name="broj-golova" placeholder="Broj golova" required>
+                </div>
                 <div class="form-group col-md-6">
                 <label for="broj-asistencija">Broj asistencija</label>
-                <input type="number" class="form-control" id="broj-asistencija" placeholder="Broj asistencija">
+                <input type="number" class="form-control" id="broj-asistencija" name="broj-asistencija" placeholder="Broj asistencija" required>
+                </div>
                 <div class="form-group col-md-6">
                 <label for="broj-odbrana">Broj odbrana</label>
-                <input type="number" class="form-control" id="broj-odbrana" placeholder="Broj odbrana">
+                <input type="number" class="form-control" id="broj-odbrana" name="broj-odbrana" placeholder="Broj odbrana" required>
                 </div>
             </div>
-            <button type="submit">Dodaj</button>
+            <button id="addPlayer" type="submit">Dodaj</button>
             </form>
         </section>
     </main>
