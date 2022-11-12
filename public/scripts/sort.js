@@ -3,8 +3,8 @@ $(".col-sort").click(function () {
     //event.preventDefault();
     const $colName = $(this).attr("id");
     const $order = $(this).data("order");
-    console.log($colName);
-    console.log(this)
+    // console.log($colName);
+    // console.log(this)
 
     $request = $.ajax({
         url: "../../handler/sort.php",

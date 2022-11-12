@@ -78,7 +78,7 @@
                 </table>
             </div>
             <a href="./player_form.php">Dodaj novog igrača</a>
-            <a>Obriši igraca</a>
+            <a href="./delete_player.php">Obriši igraca</a>
         </section>
     </main>
 </body>
