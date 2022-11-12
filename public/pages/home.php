@@ -35,7 +35,7 @@
 <body>
     <header>
         <div>
-            <a href="/public/pages/home.php"><img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo"></a>
+            <a href="home.php"><img id="flamingo-logo" src="../img/flamingo.logo-1-removebg-preview.png" alt="FK Flamingo logo"></a>
             <h1 id="test_naslov">Zvanučna stranica fudbalskog kluba Flamingo</h1>
         </div>
     </header>
@@ -77,8 +77,8 @@
                     </tbody>
                 </table>
             </div>
-            <a href="./player_form.php">Dodaj novog igrača</a>
-            <a href="./delete_player.php">Obriši igraca</a>
+            <a href="./player_form.html">Dodaj novog igrača</a>
+            <a href="./delete_player.html">Obriši igraca</a>
         </section>
     </main>
 </body>
